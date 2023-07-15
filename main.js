@@ -162,6 +162,8 @@ signUpBtn.onclick = function () {
     else {
         allUsers.push(newUser);
         localStorage.setItem('Users', JSON.stringify(allUsers))
+        clearInputs();
+        signUpBtn.disabled = true;
     }
 }
 // sing up button end

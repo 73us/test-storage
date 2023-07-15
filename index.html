@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Task</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./images/prometheus_icon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- SIGN UP BLOCK START -->
+        <div class="sign-up-block">
+            <h2 class="block-title">Please sign up</h2>
+            <!-- first name input start -->
+            <fieldset class="elem-box">
+                <label for="signUpFirstName" id="l_fName" class="input-label">First name</label>
+                <input type="text" id="signUpFirstName" class="input" placeholder="First name">
+                <div id="signUpValid_fName" class="block-validation-sign"></div>
+                <span id="signUpErr_fName" class="input-errMess">First name can contain latin letters only (max 10
+                    letters)</span>
+            </fieldset>
+            <!-- first name input end -->
+
+            <!-- last name input start -->
+            <fieldset class="elem-box">
+                <label for="signUpLastName" id="l_lName" class="input-label">Last name</label>
+                <input type="text" id="signUpLastName" class="input" placeholder="Last name">
+                <div id="signUpValid_lName" class="block-validation-sign"></div>
+                <span id="signUpErr_lName" class="input-errMess">Last name can contain latin letters only (max 20
+                    letters)</span>
+            </fieldset>
+            <!-- last name input end -->
+
+            <!-- email input start -->
+            <fieldset class="elem-box">
+                <label for="signUpEmail" id="l_email" class="input-label">Email address</label>
+                <input type="email" id="signUpEmail" class="input" placeholder="Email address">
+                <div id="signUpValid_email" class="block-validation-sign"></div>
+                <span id="signInErr_email" class="input-errMess">Email err mess</span>
+            </fieldset>
+            <!-- email input end -->
+
+            <!-- password input start -->
+            <fieldset class="elem-box">
+                <label for="signUpPassword" id="l_password" class="input-label">Password</label>
+                <input type="password" id="signUpPassword" class="input" placeholder="Password">
+                <div id="signUpValid_pass" class="block-validation-sign"></div>
+                <span id="signInErr_pass" class="input-errMess">Use letters and numbers for password (6-16 signs)</span>
+            </fieldset>
+            <!-- password input end -->
+
+            <!-- sign up button start -->
+            <fieldset class="elem-box signUpBtn-box">
+                <input type="button" id="signUpBtn" class="btn sign-up-btn" value="Sign Up" disabled>
+                <!-- <input type="button" id="signUpBtn" class="btn sign-up-btn" value="Sign Up"> -->
+            </fieldset>
+            <!-- sign up button end -->
+            <button id="signUpLink" class="sign-option-link">Sign in now</button>
+        </div>
+        <!-- SIGN UP BLOCK END -->
+
+        <!-- SIGN IN BLOCK START -->
+        <div class="sign-in-block hide">
+            <h2 class="block-title">Please sign in</h2>
+            <!-- email input start -->
+            <fieldset class="elem-box">
+                <label for="signInEmail" id="signIn_l_Email" class="input-label">Email address</label>
+                <input type="email" id="signInEmail" class="input" placeholder="Email address">
+            </fieldset>
+            <!-- email input end -->
+
+            <!-- password input start -->
+            <fieldset class="elem-box">
+                <label for="signInPassword" id="signIn_l_Pass" class="input-label">Password</label>
+                <input type="password" id="signInPassword" class="input" placeholder="Password">
+                <span id="signInErr" class="input-errMess">Incorrect email or password</span>
+            </fieldset>
+            <!-- password input end -->
+
+            <!-- sign in button start -->
+            <fieldset class="elem-box signInBtn-box">
+                <input type="button" id="signInBtn" class="btn sign-in-btn" value="Sign In" disabled>
+            </fieldset>
+            <!-- sign in button end -->
+            <button href="" id="signInLink" class="sign-option-link">Sign up now</button>
+        </div>
+        <!-- SIGN IN BLOCK END -->
+
+        <!-- ACCOUNT BLOCK START -->
+        <div class="account-block hide">
+            <div class="acc-top">
+                <div class="acc-img-box"><img src="./images/account.svg" alt="account photo/icon"></div>
+            </div>
+            <div class="acc-mid">
+                <h2 id="accName" class="block-title">Roman Semeniuk</h2>
+                <p id="accEmail">rr@gmail.com</p>
+                <p>Designer & Web Developing</p>
+            </div>
+            <div class="acc-bot">
+                <input type="button" id="signUpBtn_acc" class="btn sign-in-btn" value="Sign Up">
+            </div>
+        </div>
+        <!-- ACCOUNT BLOCK END -->
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
